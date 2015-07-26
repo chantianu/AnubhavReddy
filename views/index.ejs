@@ -32,26 +32,30 @@ p {
 	margin:30px;
 	color:red;
 }
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
  
 <body>
+
 <div id="header">
 	<h1>Hello World</h1>
 </div>
+<div id = "container" style = "width:100%">
 	<p>Wassup?</p>
 	<p>This is my sample.</p>
-	<img src="WhteverYouDo.gif" alt="Hi" style="width:304px;height:228px;">
-	
-	<p>Image to use:</p>
-	<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
 
-	<p>Canvas to fill:</p>
+<div id = "left"  style = "float:left; width: 25%;">
+	<img src="WhteverYouDo.gif" alt="Hi" style="width:304px;height:228px;">
+</div>
+<div id = "middle" style = "float:left; width: 50%;">
+	<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="250" height="300">
 	<canvas id="myCanvas" width="250" height="300"style="border:1px solid #d3d3d3;"></canvas>
 
-<p><button onclick="myCanvas()">Try it</button></p>
-
+<button onclick="myCanvas()">Click Me</button>
+</div>
+<div id = "right" style = "float:left; width: 25%;">
 <table width="300px" border="1" style="border-collapse:collapse">
 
 <tr>
@@ -72,7 +76,8 @@ p {
 </tr>
 
 </table>
-
+</div>
+</div>
 <script>
 	$(document).ready(function(){
 		$(".txt").each(function() {
